@@ -27,6 +27,9 @@ a {
   font: 600 16px / calc(60 / 16) "graphik_lcg";
   color: #fff;
 }
+.btn:hover{
+  background: #a14a32;
+}
 .btn_white {
   color: #000;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -45,7 +48,9 @@ p > a {
   font: 400 20px / calc(30 / 20) "graphik_lcg";
   text-decoration: underline;
 }
-
+p > a:hover{
+  color: #ff6336;
+}
 header {
   font: 400 15px / calc(20 / 15) "graphik_lcg";
   border-bottom: 1px solid #000;
@@ -75,6 +80,10 @@ header .btn:nth-child(2) {
   background: #ff6336;
   padding: 0 22px;
 }
+header .btn:nth-child(2):hover {
+  background: #a14a32;
+  padding: 0 22px;
+}
 /* main */
 /* first block */
 main {
@@ -102,6 +111,9 @@ h2 {
   padding: 0 41px;
   background: #ff6336;
   margin-right: 10px;
+}
+.first_block a:nth-child(1):hover{
+  background: #a14a32;
 }
 .first_block a:nth-child(2) {
   padding: 0 28px;
@@ -348,4 +360,7 @@ footer span {
 footer span:nth-of-type(1) {
   max-width: 363px;
   margin-right: 639px;
+}
+footer li:hover{
+  background: #bcb7b7;
 }
