@@ -11,6 +11,10 @@ body {
   width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+}
+.container_column {
+  flex-direction: column;
 }
 ul {
   display: flex;
@@ -113,14 +117,12 @@ h2 {
   padding: 103px 0 107px 0;
   background: #ff9c7d;
 }
-.second_block .container {
-  display: flex;
-  flex-direction: column;
-}
 .named {
-  width: 649px;
   margin: 0 auto;
   text-align: center;
+}
+.second_block .named {
+  width: 649px;
 }
 .second_block ul {
   justify-content: space-between;
@@ -135,7 +137,6 @@ h2 {
   padding: 90px 0 160px 0;
 }
 .description_block .container {
-  justify-content: space-between;
   align-items: center;
 }
 .description_block:nth-child(even) .container {
@@ -155,19 +156,13 @@ h2 {
   background: #fff8e4;
   padding: 104px 0 147px 0;
 }
-.options_block .container {
-  display: flex;
-  flex-direction: column;
-}
-.options_block h3 {
-  width: 100%;
-}
 .menu_options {
   padding: 30px 0 0 0;
+  margin: 0 -19px;
 }
 .options_block li {
   width: calc(100% / 3);
-  padding: 56px 75px 0 75px;
+  padding: 56px 60px 0 60px;
   display: flex;
 }
 .options_block h4 {
@@ -184,4 +179,173 @@ h2 {
 }
 .img_card {
   text-align: center;
+}
+/* specialization block */
+.specialization_block {
+  padding: 154px 0 187px 0;
+}
+.specialization_block h3 {
+  margin: 0 0 87px 0;
+}
+.specialization_menu {
+  display: flex;
+  margin: 0 -15px;
+}
+.specialization_menu li {
+  width: calc(100% / 3);
+  padding: 0 15px;
+}
+.photo_card {
+  margin: 0 0 37px 0;
+  min-height: 201px;
+}
+.specialization_block h4 {
+  margin: 0 0 33px 0;
+  font: 600 30px / calc(40 / 30) "graphik_lcg";
+}
+.specialization_block a {
+  margin: 25px 0 0 0;
+  font: 400 20px / calc(30 / 20) "graphik_lcg";
+  text-decoration: underline;
+}
+/* quote block */
+.quote_block {
+  padding: 53px 0 108px 0;
+  background: #c9e8f2;
+}
+.quote {
+  max-width: 920px;
+}
+blockquote {
+  margin: 10px 0 23px 0;
+  font: 400 30px / calc(40 / 30) "graphik_lcg";
+}
+.author {
+  font: 400 15px / calc(25 / 15) "graphik_lcg";
+  margin-bottom: 7px;
+}
+/* software block */
+.software_block {
+  padding: 80px 0 84px 0;
+  background: #dabc98;
+}
+.software_block .container {
+  max-width: 1340px;
+  align-items: center;
+  justify-content: left;
+}
+.software_block h4 {
+  font: 600 35px / calc(50 / 35) "graphik_lcg";
+  letter-spacing: 0em;
+  max-width: 461px;
+  margin: 0 124px 0 72px;
+}
+.rated_block_big {
+  display: flex;
+  min-height: 168px;
+  border-left: 1px solid black;
+  padding: 0 87px 0 70px;
+  align-items: center;
+}
+.rated_block:nth-child(1) {
+  margin-right: 69px;
+}
+/* integrate block */
+.integrate_block {
+  text-align: center;
+  padding: 155px 0 163px 0;
+}
+.integrate_block .container,
+.localization_block .container {
+  align-items: center;
+}
+.h2_style {
+  font: 600 65px / calc(75 / 65) "graphik_lcg";
+  letter-spacing: 0em;
+  max-width: 791px;
+}
+.integrate_block p {
+  font: 400 25px / calc(30 / 25) "graphik_lcg";
+  max-width: 539px;
+  margin: 5px 0 25px 0;
+}
+.integrate_block a {
+  background: #ff6336;
+  padding: 0 20px;
+  margin-top: 35px;
+}
+/* localization block */
+.localization_block {
+  padding: 113px 0 161px 0;
+  text-align: center;
+  background: #ff9c7d;
+}
+.localization_block p {
+  margin: 31px 0 56px 0;
+}
+.localization_block .btn {
+  background: #000;
+  padding: 0 40px;
+  font-size: 17px;
+}
+/* footer */
+footer {
+  background: #eeeeee;
+}
+.footer_top {
+  padding: 92px 0 97px 0;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.case_block_footer {
+  max-width: 300px;
+  margin-right: 140px;
+}
+.footer_top h3 {
+  font: 600 40px / calc(50 / 40) "graphik_lcg";
+  margin: -4px 0 28px 0;
+}
+.case_logo_img {
+  margin: 31px 0 11px 0;
+}
+.case_block_footer a {
+  font: 600 20px / calc(30 / 20) "graphik_lcg";
+  margin-top: 15px;
+}
+.footer_top ul {
+  flex-direction: column;
+}
+.footer_top h4 {
+  font: 600 20px / calc(25 / 20) "graphik_lcg";
+  margin: 0 0 12px 0;
+}
+.footer_top li {
+  font: 400 15px "graphik_lcg";
+  padding: 5.5px 0;
+}
+.product_block_footer {
+  margin-right: 115px;
+}
+.support_block_footer {
+  margin-right: 51px;
+}
+.company_block_footer {
+  margin-right: 62px;
+}
+/* fotter bottom */
+.fotter_bottom {
+  padding: 47px 0 48px 0;
+  display: flex;
+  align-items: center;
+}
+.logo_footer {
+  margin-right: 14px;
+}
+footer span {
+  display: block;
+  font: 400 12px / calc(15 / 12) "graphik_lcg";
+}
+footer span:nth-of-type(1) {
+  max-width: 363px;
+  margin-right: 639px;
 }
